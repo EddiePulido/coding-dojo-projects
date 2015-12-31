@@ -1,0 +1,26 @@
+<h1>1955 Dashboard</h1>
+<hr>
+
+<h4>Add people who were born in 1955!</h4>
+<input type="text" ng-model="person">
+<button type="button" name="button" ng-click="addPeople()">Submit</button><br><br>
+
+<div class="">
+  <h3>Person Info: </h3>
+  <p>Name: {{singlePersonData[0].name}}</p>
+</div>
+
+<table class = "table table-striped">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody>
+      <tr ng-repeat="singlePerson in people">
+        <td><a href="" ng-click="findOnePerson(singlePerson._id)">{{singlePerson.name}}</a></td>
+        <td><button type="button" name="button" ng-click="removePeople(singlePerson._id)">Delete</button></td>
+      </tr>
+  </tbody>
+</table>

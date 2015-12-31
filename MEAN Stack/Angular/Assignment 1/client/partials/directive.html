@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-6">
+
+    <div>
+      <span>Favorite Food</span>
+      <input type="text" name="name" value="" ng-model = "food">
+      <button type="button" name="button" ng-click="addFood()">Add Food</button>
+    </div>
+
+    <p>Currently typing: <span ng-bind = "food"></span></p>
+
+  </div>
+  <div class="col-md-6">
+
+    <input class = "form-control" type="text" name="name" placeholder="filter..." ng-model = "foodFilter">
+
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="food in displayFood | filter:foodFilter track by $index">{{food}}</li>
+    </ul>
+
+  </div>
+</div>

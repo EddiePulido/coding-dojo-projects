@@ -1,0 +1,25 @@
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.surveys{
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px;
+}
+.success-submit{
+  background-color: green;
+  padding: 20px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+.submitted-data{
+  border: 2px solid black;
+  padding: 10px;
+}
+.submitted-data h2{
+  border-bottom: 1px solid black;
+  width: 300px;
+  display: inline-block;
+}

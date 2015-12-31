@@ -1,0 +1,26 @@
+.chat-form{
+  display: block;
+  width: 500px;
+  margin: 200px auto;
+  border: 1px solid black;
+  padding: 30px;
+}
+.chat-button{
+  margin: 20px 340px;
+}
+.chat-info{
+  font-style: italic;
+}
+.chat-name-text{
+  font-family: cursive;
+  font-size: 1.2em;
+}
+.chat-box{
+  border: 3px solid black;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.send-button{
+  float: right;
+  margin: 20px 0;
+}

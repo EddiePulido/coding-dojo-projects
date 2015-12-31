@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.products{
+  border: 1px solid black;
+  width: 1000px;
+  height: 450px;
+  overflow-y: auto;
+  font-family: cursive;
+}
+
+.new-product-button{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.label{
+  display: block;
+}
+
+.add-product #name,
+.add-product #description,
+.add-product #price{
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.add-product-button,
+.update-product-button{
+  display: block;
+  margin-bottom: 15px;
+}
+
+.product-title{
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.product-item{
+  border-bottom: 1px solid black;
+}
+
+.product_name{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border-right: 2px solid black;
+}
+
+.product_description{
+  display: inline-block;
+  width: 400px;
+  height: 50px;
+  vertical-align: bottom;
+  padding: 10px;
+}
+
+.product_price{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.product_action{
+  display: inline-block;
+  width: 395px;
+  height: 50px;
+  padding: 10px;
+}
+
+.product_show,
+.product_edit,
+.product_delete{
+  display: inline-block;
+  height: 50px;
+  padding: 10px;
+}
+.product_show{
+  width: 130px;
+  padding-left: 70px;
+  border-right: 1px solid black;
+}
+
+.product_edit{
+  width: 130px;
+  padding-left: 70px;
+  border-right: 1px solid black;
+}
+
+.product_delete{
+  width: 135px;
+  vertical-align: bottom;
+  padding-left: 30px;
+}
+
+.errors{
+  color: red;
+}

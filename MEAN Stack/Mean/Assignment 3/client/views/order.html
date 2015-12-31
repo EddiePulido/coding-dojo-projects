@@ -1,0 +1,38 @@
+<h4>Add a new order</h4>
+<span>Customer</span>
+<select name="name" ng-model="order.customer">
+  <option value="">Select Customer</option>
+  <option ng-repeat="customer in customers" value="{{customer.name}}">{{customer.name}}</option>
+</select>
+<br><br>
+<span>Order</span>
+<select name="quantity" ng-model="order.number">
+  <option value="">Select Quantity</option>
+  <option ng-repeat="number in quantity" value="{{number}}">{{number}}</option>
+</select>
+<select name="product" ng-model="order.item">
+  <option value="">Select Product</option>
+  <option ng-repeat="item in product" value="{{item}}">{{item}}</option>
+</select>
+<button type="button" name="button" ng-click="createOrder(order)">Order</button>
+<hr>
+<input type="text" name="name" placeholder="search name..." ng-model="orderFilter">
+<br><br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Customer Name</td>
+      <td>Product</td>
+      <td>Quantity</td>
+      <td>Date</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="order in orders | filter : orderFilter track by $index">
+      <td>{{order.name}}</td>
+      <td>{{order.product}}</td>
+      <td>{{order.quantity}}</td>
+      <td>{{order.createAt}}</td>
+    </tr>
+  </tbody>
+</table>

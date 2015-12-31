@@ -1,0 +1,11 @@
+error # 2002 - php_network_getaddresses: getaddrinfo failed: No such host is known.
+
+fix: Make sure you supplied the correct host value for DB_HOST
+
+error # 1044 - Access denied for user.
+
+fix: Make sure you supplied the correct username and password value for DB_USERNAME or DB_PASSWORD
+
+error # 1049 - Unknown database.
+
+fix: Make sure you supplied the correct database value for DB_DATABASE

@@ -1,0 +1,12 @@
+.container{
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+}
+.random-word{
+  border: 1px solid black;
+  width: 200px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 0;
+}

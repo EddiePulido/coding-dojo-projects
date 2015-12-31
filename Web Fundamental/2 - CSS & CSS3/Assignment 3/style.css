@@ -1,0 +1,109 @@
+.container{
+
+    width: 970px;
+
+}
+.header{
+
+    width: 970px;
+
+}
+.banner{
+
+    width: 950px;
+    background-color:  	#800000;
+    padding-left: 20px;
+
+}
+.logo{
+
+    width: 590px;
+    display: inline-block;
+
+}
+.logo p {
+
+    display: inline-block;
+    vertical-align: top;
+
+}
+.optional-tool{
+
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.nav{
+
+    width: 970px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    background-color:  	#D3D3D3;
+    font-weight: bold;
+
+}
+.nav li{
+
+    display: inline;
+    border-right: 1px black solid;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.nav .link-border-remove{
+    border-right: none;
+}
+.side-bar{
+
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px black solid;
+    margin: 15px;
+    background-color:  	#D3D3D3;
+
+}
+.main-content{
+
+    width: 650px;
+    display: inline-block;
+    margin: 15px;
+
+}
+.logo-text{
+
+    color: white;
+    font-family:fantasy;
+    font-size: 1.5em;
+
+}
+.link-tool{
+
+    color: orange;
+
+}
+.search{
+
+    text-align: center;
+
+}
+.search button {
+
+    background-color: #800000;
+    color: white;
+
+}
+.text-tool{
+
+    color: white;
+
+}
+.header-color{
+
+    color: red;
+
+}
+a{
+    color: red;
+}

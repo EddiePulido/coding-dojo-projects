@@ -1,0 +1,20 @@
+{
+  "name": "assignment",
+  "version": "0.0.0",
+  "authors": [
+    "Nelson <mushy1693@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "bootstrap": "~3.3.6"
+  }
+}

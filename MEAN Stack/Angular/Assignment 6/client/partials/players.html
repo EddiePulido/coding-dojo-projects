@@ -1,0 +1,27 @@
+<div class="page-header">
+  <h1>Players</h1>
+</div>
+
+<div class="row">
+  <h3>Name</h3>
+  <input class="form-control" type="text" name="name" ng-model="player.name"><br>
+  <button type="button" name="button" class="btn btn-primary form-control" ng-click="addPlayer()">Add Player</button>
+</div>
+<div class="row">
+  <hr><input type="text" ng-model="filterPlayer" placeholder="filter..."><br><br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Actions</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="player in players | filter : filterPlayer track by $index">
+        <td>{{player.name}}</td>
+        <td><button type="button" name="button" ng-click="removePlayer(player)">Remove Player</button></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,57 @@
+<h1>Welcome, {{username}}!</h1>
+<br>
+
+<input class="form-control" type="text" name="name" placeholder="search" ng-model="topicSearch"><br>
+
+&nbsp;&nbsp;&nbsp;
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Add Topic
+</button>
+
+<br><br>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Topic</th>
+      <th>Username</th>
+      <th>Posts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in topics | filter : topicSearch track by $index">
+      <td>{{item.category}}</td>
+      <td><a href="#/topic" ng-click="setId(item._id)">{{item.topic}}</a></td>
+      <td><a href="" ng-click="createUser(item.username)">{{item.username}}</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>Add a new Topic</h2><br>
+        <span>Topic: </span><input class="form-control" type="text" name="topic" value="" ng-model="topic.name"><br><br>
+        <p>Description: </p><textarea class="form-control" name="description" rows="8" cols="40" ng-model="topic.description"></textarea><br><br>
+        <span>Category: </span>
+        <select class="form-control" name="category" ng-model="topic.category">
+            <option value="">Select a Category</option>
+            <option value="Ruby on Rails">Ruby on Rails</option>
+            <option value="MySQL">MySQL</option>
+            <option value="UX">UX</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Javascript">Javascript</option>
+        </select><br><br>
+        <button class="btn btn-primary" type="button" name="button" ng-click="createTopic()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

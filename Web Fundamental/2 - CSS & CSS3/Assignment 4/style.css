@@ -1,0 +1,135 @@
+head,div,p{
+
+    margin: 0;
+    padding: 0;
+
+}
+img{
+
+    max-width: 100%;
+    max-height: 100%;
+
+}
+button {
+
+    background-color: yellow;
+    border: 3px black solid;
+    margin-left: 100px;
+
+}
+.container{
+
+    width: 1100px;
+    margin: 0 auto;
+
+}
+.banner{
+
+    width: 1100px;
+
+}
+.logo{
+
+    width: 500px;
+    display: inline-block;
+
+}
+.contact{
+
+    width: 575px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    padding: 10px;
+
+}
+.nav li{
+
+    display: inline;
+    list-style-type: none;
+    padding: 8px 8px;
+    border-left: 1px black solid;
+    font-size: 1.1em;
+
+
+}
+.content{
+    width: 1050px;
+    background-color: black;
+    padding: 25px;
+
+}
+.top-content{
+    width: 1050px;
+
+}
+.about-pic{
+    width: 355px;
+    display: inline-block;
+    vertical-align: top;
+    border: 6px white solid;
+
+}
+.about-content{
+
+    width: 675px;
+    background-color: gray;
+    display: inline-block;
+    color: white;
+
+}
+.about-content p {
+
+    padding: 15px;
+
+}
+.content-title{
+
+    background-color: yellow;
+    color: black;
+    margin: 0;
+    font-size: 1.2em;
+    padding: 10px;
+
+}
+.about-subtitle{
+
+    font-weight: bold;
+    padding: 0 15px;
+
+}
+.middle-content{
+
+    width: 1045px;
+    background-color: black;
+    color: yellow;
+    padding: 10px 0;
+
+
+}
+.bottom-content{
+
+    width: 1045px;
+
+}
+.information-content{
+
+    width: 255px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 10px;
+    margin-right: 3px;
+    text-align: center;
+
+}
+.information-content p{
+
+    padding: 0 10px;
+
+}
+.information-content img{
+
+    width: 255px;
+
+}

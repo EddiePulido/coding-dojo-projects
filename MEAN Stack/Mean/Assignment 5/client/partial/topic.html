@@ -1,0 +1,58 @@
+<br>
+
+<a href="#/dashboard">Dashboard</a>&nbsp;&nbsp;&nbsp;
+<a href="" ng-click="logout()">Logout</a>
+
+<br><br>
+
+<p><a href="" ng-click="createUser(oneTopic[0].username)">{{oneTopic[0].username}}</a> posted a topic: </p>
+<p><b>Topic: {{oneTopic[0].topic}}</b></p>
+<p><b><i>Description:</i></b> {{oneTopic[0].description}}</p>
+
+<br><br>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Answer Question
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>Post your answer here...</p>
+        <textarea class="form-control" name="post" rows="8" cols="40" ng-model="post.description"></textarea>
+        <br>
+        <button class="btn btn-primary" type="button" name="button" ng-click="createPost(oneTopic[0]._id)">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="" ng-repeat="post in posts">
+
+  <p><a href="" ng-click="createUser(post.username)">{{post.username}}</a> {{post.description}}</p>
+
+  <div class="" ng-repeat="comment in post.comment">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="" ng-click="createUser(comment.username)">{{comment.username}}</a> <span>: {{comment.description}}</span><br><br>
+  </div>
+
+  <textarea class="form-control" name="comment" rows="2" cols="40" placeholder="comment..." ng-model="comment.description"></textarea><br>
+  <button class="btn btn-primary" type="button" name="button" ng-click="createComment(post._id, comment)">Comment</button>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  <button class="btn btn-success" type="button" ng-click="updateUpVotePost(post._id)">
+    Like <span class="badge">{{post.upVote}}</span>
+  </button>
+  &nbsp;&nbsp;&nbsp;
+  <button class="btn btn-danger" type="button" ng-click="updateDownVotePost(post._id)">
+    Dislike <span class="badge">{{post.downVote}}</span>
+  </button>
+
+  <br><br><hr>
+
+</div>

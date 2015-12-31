@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+
+input,select{
+  width: 300px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+}
+
+.home-button{
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+
+.logout-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.add-book-form{
+  display: inline-block;
+  width: 400px;
+}
+
+.label{
+  display: block;
+}
+
+.form-rating{
+  width: 100px;
+}
+
+.add-book-button{
+  position: absolute;
+  bottom: 0;
+  left:150px;
+  width: 150px;
+}
+
+.errors{
+  display: inline-block;
+  width: 595px;
+  color: red;
+  vertical-align: top;
+}

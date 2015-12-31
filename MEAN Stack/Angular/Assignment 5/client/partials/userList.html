@@ -1,0 +1,20 @@
+<div class="row">
+  <br>
+  <input type="text" ng-model="filterUser" placeholder="filter..."><br><br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Favorite Language</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users | filter:filterUser track by $index">
+        <td>{{user.fname}}</td>
+        <td>{{user.lname}}</td>
+        <td>{{user.language}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+    <title>Orders and Customers</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <br><span style="margin : 0 20px"></span><a href="#/customers">Customer</a> | <a href="#/orders">Order</a>
+
+    <div class="container" ng-view></div>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="config/route.js"></script>
+
+    <script src="controller/customerController.js"></script>
+    <script src="controller/orderController.js"></script>
+
+    <script src="factory/customerFactory.js"></script>
+    <script src="factory/orderFactory.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+}
+
+.input{
+  padding: 20px 100px;
+  width: 550px;
+  text-align: right;
+  display: inline-block;
+}
+
+.errors{
+  display: inline-block;
+  width: 400px;
+  height: 175px;
+  vertical-align: top;
+  color: red;
+}
+
+.welcome-info span{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.info{
+  padding: 30px;
+  margin-top: 20px;
+  width: 500px;
+}

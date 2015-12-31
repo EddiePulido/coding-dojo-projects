@@ -1,0 +1,11 @@
+CREATE DATABASE facebook
+use facebook
+CREATE TABLE chats
+(
+	id int,
+	messages varchar(255)
+);
+
+INSERT INTO chats (id,messages) VALUES (1,'messages');
+SELECT * FROM chats;
+DELETE FROM chats WHERE id = 1;

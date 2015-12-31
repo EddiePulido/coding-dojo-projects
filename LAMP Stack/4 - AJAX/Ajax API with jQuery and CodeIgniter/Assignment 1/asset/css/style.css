@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.notes{
+  display: inline-block;
+  width: 1000px;
+  height: 400px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.add-notes{
+  display: inline-block;
+  width: 300px;
+}
+
+.note{
+  display: inline-block;
+  width: 180px;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid black;
+}

@@ -1,0 +1,7 @@
+Type in link into browser
+click fork
+clone forked repo
+do some changes
+add, commit, and push to remote
+click pull request on github
+submit the pull request

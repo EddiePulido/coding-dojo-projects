@@ -1,0 +1,23 @@
+td{
+  padding: 10px;
+  border: 1px solid black;
+}
+
+table{
+  margin: 0 auto;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.multiplicative{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.special-row td{
+  background-color: #74AFAD;
+}

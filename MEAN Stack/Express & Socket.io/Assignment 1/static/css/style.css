@@ -1,0 +1,12 @@
+label{
+  display: block;
+}
+p{
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}

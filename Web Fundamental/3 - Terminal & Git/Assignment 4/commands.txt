@@ -1,0 +1,7 @@
+Click create new repository button
+create a local repository on local machine
+add and commit files
+add remote
+push to github remote repository
+change local machine data and push to remote
+click on your remote repository to view more info

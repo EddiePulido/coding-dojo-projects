@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+.gold-info{
+  display: inline-block;
+  padding: 5px 10px;
+}
+.total-gold{
+  display: inline-block;
+  padding: 5px 10px;
+  width: 100px;
+  border: 1px solid black;
+}
+.building{
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+  padding: 7px;
+  margin-right: 7px;
+  border: 1px solid black;
+}
+.activities{
+  width: 1000px;
+  height: 250px;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+.green{
+  color: green;
+  padding: 10px;
+}
+.red{
+  color: red;
+  padding: 10px;
+}

@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.gold-amount h2 {
+  display: inline-block;
+}
+
+.gold-amount span{
+  border: 1px solid black;
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+}
+
+.building{
+  width: 220px;
+  height: 150px;
+  text-align: center;
+  margin: 20px 15px;
+  float: left;
+  border: 1px solid black;
+}
+
+.past-activities{
+  width: 1000px;
+  height: 200px;
+  clear: both;
+  overflow-y: auto;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}

@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+.register{
+  width: 490px;
+  float:left;
+  text-align: center;
+  text-align: center;border: 1px solid black;
+  padding: 40px;
+  margin-right: 20px;
+
+}
+.register h2{
+  font-family: cursive;
+}
+.login{
+  width: 490px;
+  float:left;
+  text-align: center;border: 1px solid black;
+  padding: 40px;
+}
+.login h2{
+  font-family: cursive;
+}
+.errors{
+  width: 1000px;
+  height: 200px;
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  color: red;
+}

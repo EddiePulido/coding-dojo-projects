@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Associations</h1>
+</div>
+
+<div class="row">
+
+  <h3>Player</h3>
+  <select class="form-control" name="player" ng-model="association.player">
+    <option value="">Select Player</option>
+    <option ng-repeat="player in players" value="{{player.name}}">{{player.name}}</option>
+  </select>
+
+  <br>
+
+  <h3>Team</h3>
+  <select class="form-control" name="team" ng-model="association.team">
+    <option value="">Select Team</option>
+    <option ng-repeat="team in teams" value="{{team.name}}">{{team.name}}</option>
+  </select>
+
+  <br>
+
+  <button type="button" name="button" ng-click="addAssociation()">Assign Player to Team</button>
+
+</div>
+
+<div class="row">
+  <hr><input type="text" ng-model="filterAssociation" placeholder="filter..."><br><br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Team</td>
+        <td>Actions</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="association in associations | filter : filterAssociation track by $index">
+        <td>{{association.player}}</td>
+        <td>{{association.team}}</td>
+        <td><button type="button" name="button" ng-click="removeAssociation(association)">Clear Assignment</button></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

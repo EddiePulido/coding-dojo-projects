@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="discussionBoard">
+  <head>
+    <meta charset="utf-8">
+    <title>Discussion Board</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container" ng-view></div>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="config/route.js"></script>
+
+    <script src="controller/dashboardController.js"></script>
+    <script src="controller/loginController.js"></script>
+    <script src="controller/topicController.js"></script>
+    <script src="controller/userController.js"></script>
+
+    <script src="factory/postFactory.js"></script>
+    <script src="factory/commentFactory.js"></script>
+    <script src="factory/topicFactory.js"></script>
+    <script src="factory/userFactory.js"></script>
+  </body>
+</html>

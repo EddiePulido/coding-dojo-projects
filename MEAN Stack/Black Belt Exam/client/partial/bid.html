@@ -1,0 +1,55 @@
+<h2>Bid Now!</h2>
+
+<a href="" ng-click="logout()">Logout</a>
+
+<div class="row">
+  <div class="col-md-4">
+    <h3>Product 1</h3>
+    <input type="number" name="p1" ng-model="bid.p1">
+    <button type="button" name="button" ng-click="createP1Bid()">Bid</button>
+  </div>
+  <div class="col-md-4">
+    <h3>Product 2</h3>
+    <input type="number" name="p2" ng-model="bid.p2">
+    <button type="button" name="button" ng-click="createP2Bid()">Bid</button>
+  </div>
+  <div class="col-md-4">
+    <h3>Product 3</h3>
+    <input type="number" name="p3" ng-model="bid.p3">
+    <button type="button" name="button" ng-click="createP3Bid()">Bid</button>
+  </div>
+</div>
+
+<hr>
+
+<div class="error" ng-if ="error !== ''">
+  <p style="color : red;">{{error}}</p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h5>Current Bids:</h5>
+    <div class="" style="height : 200px; overflow-y : auto">
+      <p ng-repeat="bids in p1Bids | filter : p1Search track by $index">{{bids.username}}: ${{bids.bid}}</p>
+    </div>
+    <input type="text" name="p1Search" placeholder="Search" ng-model="p1Search">
+  </div>
+  <div class="col-md-4">
+    <h5>Current Bids:</h5>
+    <div class="" style="height : 200px; overflow-y : auto">
+      <p ng-repeat="bids in p2Bids | filter : p2Search track by $index">{{bids.username}}: ${{bids.bid}}</p>
+    </div>
+    <input type="text" name="p2Search" placeholder="Search" ng-model="p2Search">
+  </div>
+  <div class="col-md-4">
+    <h5>Current Bids:</h5>
+    <div class="" style="height : 200px; overflow-y : auto">
+      <p ng-repeat="bids in p3Bids | filter : p3Search track by $index">{{bids.username}}: ${{bids.bid}}</p>
+    </div>
+    <input type="text" name="p3Search" placeholder="Search" ng-model="p3Search">
+  </div>
+</div>
+
+<hr>
+
+<button type="button" name="button" ng-click="endBid()">End Bid</button>

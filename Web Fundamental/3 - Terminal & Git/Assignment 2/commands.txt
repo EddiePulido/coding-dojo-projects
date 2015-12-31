@@ -1,0 +1,14 @@
+cd Desktop
+mkdir test
+cd test
+touch index.html
+touch styles.css
+git init
+git add .
+git commit -m "updated html"
+git status
+git add .
+git commit -m "updated cssl"
+git status
+git log
+git revert -n HEAD

@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+}
+
+.home-button{
+  position: absolute;
+  top: 0;
+  right: 240px;
+}
+
+.add-book-button{
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+
+.logout-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

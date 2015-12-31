@@ -1,0 +1,73 @@
+<h2>Products Controller</h2>
+
+<div ng-controller="productController">
+
+  <br>
+
+  <div class="row">
+    <p>Product Name: </p>
+    <input type="text" name="name" value="" ng-model="product.name">
+    <p>Product Price: </p>
+    <input type="text" name="price" value="" ng-model="product.price">
+    <button type="button" name="button" ng-click="addProduct()">Add Product</button>
+  </div>
+
+  <br>
+
+  <div class="row">
+
+    <input type="text" ng-model="filterProduct" placeholder="filter...">
+    <br><br>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="product in products | filter:filterProduct track by $index">
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td><button type="button" name="button" ng-click="removeProduct(product)">Delete Product</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<hr>
+
+<h2>Orders Controller</h2>
+
+<div ng-controller="orderController">
+
+  <div class="row">
+
+    <input type="text" ng-model="filterOrder" placeholder="filter...">
+    <br><br>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Qty Available</td>
+          <td>Actions</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="order in orders | filter:filterOrder track by $index">
+          <td>{{order.name}}</td>
+          <td>{{order.price}}</td>
+          <td>{{order.qty}}</td>
+          <td><button type="button" name="button" ng-click="buyProduct(order)">Buy</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

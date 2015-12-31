@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+    <title>Players and Teams</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <a href="#/players">Players</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="#/teams">Teams</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="#/associations">Associations</a>
+
+    <div class="container" ng-view>
+
+    </div>
+
+    <script src = "/lib/jquery/dist/jquery.min.js"></script>
+    <script src = "/lib/angular/angular.min.js"></script>
+    <script src = "/lib/angular-route/angular-route.min.js"></script>
+    <script src = "/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src = "/app.js"></script>
+    <script src = "/route.js"></script>
+
+    <script src = "/controller/playersController.js"></script>
+    <script src = "/controller/teamsController.js"></script>
+    <script src = "/controller/associationsController.js"></script>
+    <script src = "/factory/playerFactory.js"></script>
+    <script src = "/factory/teamFactory.js"></script>
+
+  </body>
+</html>

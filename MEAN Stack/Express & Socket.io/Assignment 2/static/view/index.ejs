@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form Revisited</title>
+  </head>
+  <body>
+    <h1>Survey Form Revisited</h1>
+
+    <div class="info">
+
+    </div>
+
+    <form class="js-survey-form" action="index.html" method="post">
+
+      <label for="">Your Name: </label>
+      <input type="text" name="name">
+
+      <label for="">Dojo Location: </label>
+      <select class="" name="location">
+        <option>Mountain View</option>
+      </select>
+
+      <label for="">Favorite Language: </label>
+      <select class="" name="language">
+        <option>Javascript</option>
+      </select>
+
+      <label for="">Comment (optional): </label>
+      <textarea name="comment" rows="8" cols="40"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
